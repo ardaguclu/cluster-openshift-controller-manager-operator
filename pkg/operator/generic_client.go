@@ -3,13 +3,14 @@ package operator
 import (
 	"context"
 	"fmt"
-	v1 "github.com/openshift/client-go/operator/applyconfigurations/operator/v1"
+
 	"k8s.io/apimachinery/pkg/api/equality"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/tools/cache"
 
 	operatorapiv1 "github.com/openshift/api/operator/v1"
+	v1 "github.com/openshift/client-go/operator/applyconfigurations/operator/v1"
 	operatorclientv1 "github.com/openshift/client-go/operator/clientset/versioned/typed/operator/v1"
 	operatorinformers "github.com/openshift/client-go/operator/informers/externalversions"
 )
